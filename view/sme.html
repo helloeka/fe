@@ -1,0 +1,222 @@
+<section class="header-wrap-page">
+    <div class="bg-green-header-page"></div>
+    <div class="bg-header"></div>
+    <div class="container content-header-page">
+      <h1> SME Lists</h1>
+      <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#/home">
+            Home
+          </a>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p class="active">
+             SME Lists
+          <p>
+        </li>
+      </ul>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</section>
+<section class="bg-content bg-gray">
+  <div class="content-wrap">
+    <div class="container">
+      <div class="content-page">
+        <div class="col-lg-4">
+          <div class="fwd-form-group">
+              <label>Search Quotation</label>
+              <input class="form-control field-custom" type="text" placeholder="Search Quotation By Number, Client Name">
+              <span class="field-icon icon-login"><i class="fa fa-search" aria-hidden="true"></i></span>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div ng-controller="statementCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+              <label>Business Type</label>
+              <md-select placeholder="Assign to statement" ng-model="statement" md-on-open="loadStatements()">
+                <md-option ng-value="statement" ng-repeat="statement in statements">{{statement.name}}</md-option>
+              </md-select>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div ng-controller="criteriaCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+              <label>Status</label>
+              <md-select placeholder="Select Status" ng-model="criteria" md-on-open="loadCriterion()">
+                <md-option ng-value="criteria" ng-repeat="criteria in criterion">{{criteria.name}}</md-option>
+              </md-select>
+          </div>
+        </div>
+        <div class="col-lg-2 no-padding">
+          <button class="btn-orange width-100 margin-top-30" tabindex="0" ng-reflect-router-link="/new-quotation"><span> New Quotation</span></button>
+        </div>
+
+        <div class="clearfix"></div>
+        <div class="col-lg-12 no-padding">
+          <div class="border-bottom"></div>
+        </div>
+        <div class="col-lg-6 no-padding">
+          <div class="title-result">
+            <h4>Total <span class="color-orange font-bold"> 25 </span>results for  SME Lists</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 no-padding">
+          <div class="pagination-wrap float-right">
+            <ul>
+              <li>
+                <a  href="javascript:void(0)"><span class="icon-left"></span></a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)" class="active-number">1</a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)">2</a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)">3</a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)">4</a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)">5</a>
+              </li>
+              <li>
+                <a  href="javascript:void(0)" class="border-right-1px"><span class="icon-right"></span></a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
+          </div>
+        </div>
+
+        <section ng-controller="achievementCtrl">
+            <section class="overflow-x">
+                <table class="fwd-table table-striped">
+                       <thead>
+                           <tr  class="table-head-gray1">
+                               <th>Quotation No</th>
+                               <th>Business Type </th>
+                               <th>Client Name</th>
+                               <th>Insurance Company</th>
+                               <th>Target Commencement Date</th>
+                               <th>Expect Expiry  </th>
+                               <th>Status</th>
+                               <th>View</th>
+                           </tr>
+                       </thead>
+                       <tbody>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-blue">Negotiation</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-blue">Negotiation</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-blue">Negotiation</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-green">Confirmed</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                           <tr>
+                               <td><a [routerLink]="['#']"> <span class="color-orange">Q00000000242</span></a></td>
+                               <td>Group Term Life</td>
+                               <td>PT Cahaya Sejahtera</td>
+                               <td>FWD Life</td>
+                               <td >12/12/2017</td>
+                               <td>12/12/2017</td>
+                               <td><span class="color-blue">Negotiation</span></td>
+                               <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                           </tr>
+                       </tbody>
+                     </table>
+              </section>
+        </section>
+        <section class="bottom-content-page">
+          <div class="col-lg-12 title-result-bottom">
+            <p>Page <span class="color-orange font-bold">1</span> of <span class="color-orange font-bold">3</span> in  SME Lists</p>
+          </div>
+          <div class="clearfix"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</section>

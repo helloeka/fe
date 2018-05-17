@@ -1,0 +1,138 @@
+@media only screen and (max-width:425px) {
+  .screen-no-display {
+    display:none !important;
+  }
+  .sitemap ul {
+    margin:auto;
+    width: 200px;
+    float:none;
+  }
+  .copyright-wrap{
+    position:relative;
+
+  }
+  .login-wrap {
+    position: relative;
+    width: 280px;
+    height: 450px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+  }
+
+  .logo-fwd {
+      width: 110px;
+      height: 70px;
+      margin:10px auto;
+      background-size: 70px;
+      background-position: center;
+  }
+  .form-login {
+    padding:0px 30px;
+  }
+  .form-custom {
+    padding:20px 10px 20px 0px !important;
+  }
+
+  .logo-fwd-white {
+    margin: 10px auto;
+    float:none;
+  }
+  .btn-orange {
+    width:100%;
+    margin:10px auto;
+  }
+  .header-wrap-page {
+    height:auto
+  }
+}
+
+  @media only screen and (max-width: 800px) {
+  .search-wrap {
+    width:100%;
+  }
+  .social-network ul li p {
+    display:none;
+  }
+}
+@media only screen and (min-width: 768px) {
+.menu-overlay {
+  display:none
+}
+}
+@media only screen and (max-width: 767px) {
+
+  .title-first h5 {
+    font-size:30px;
+  }
+
+  .title-second {
+    left: 9%;
+    top: 80%;
+  }
+
+  .title-second h5 {
+    font-size:30px;
+
+  }
+  #slide-navbar-collapse {
+    position: fixed;
+    top: 0;
+    left:0px;
+    z-index: 99;
+    width: 280px;
+    height: 100%;
+    background-color: #fff;
+    overflow: auto;
+  }
+  .menu-overlay {
+    display: none;
+    background-color: #000;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
+  }
+
+  .owl-carousel .owl-nav .owl-next {
+    font-size:32px !important;
+  }
+  .owl-carousel .owl-nav .owl-prev {
+    font-size: 32px !important;
+  }
+
+  .phone {
+    width: 298px;
+    height: 469px;
+    background-image: url(../img/img-phone.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom: 5%;
+    z-index: 1;
+    margin-left:0px;
+  }
+  .social-network {
+    float: none;
+    text-align: center;
+
+  }
+  .social-network ul {
+    text-align:center;
+    display: inline-block;
+
+  }
+  .social-network ul li {
+    text-align:center;
+  }
+  .social-network ul li p{
+    display:none;
+  }
+  .copyright {
+    text-align: center;
+  }
+}

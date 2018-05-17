@@ -1,0 +1,121 @@
+<section class="header-wrap-page">
+    <div class="bg-green-header-page"></div>
+    <div class="bg-header"></div>
+    <div class="container content-header-page">
+      <h1>Create New Quotation</h1>
+      <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#/home">
+            Home
+          </a>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p>
+            Quotation
+          <p>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p class="active">
+            New Quotation
+          <p>
+        </li>
+      </ul>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</section>
+<section class="bg-content bg-gray">
+  <div class="content-wrap">
+    <div class="container">
+      <div class="content-page">
+        <div class="col-lg-6">
+            <div ng-controller="statementCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                <label>Business Type</label>
+                <md-select placeholder="Assign to statement" ng-model="statement" md-on-open="loadStatements()">
+                  <md-option ng-value="statement" ng-repeat="statement in statements">{{statement.name}}</md-option>
+                </md-select>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fwd-form-group margin-bottom-10">
+                <label>Handler</label>
+                <input class="form-control field-custom" type="text" placeholder="e.g. Sales">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fwd-form-group  margin-bottom-10">
+                <label>Producer Code 1</label>
+                <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fwd-form-group  margin-bottom-10">
+                <label>Producer Code 2</label>
+                <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="fwd-form-group  margin-bottom-10">
+                <label>Producer Channel 1</label>
+                <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+            </div>
+        </div>
+      <div class="col-lg-6">
+          <div class="fwd-form-group  margin-bottom-10">
+              <label>Producer Channel 2</label>
+              <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+          </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="fwd-form-group  margin-bottom-10">
+              <label>Producer Name 1</label>
+              <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+          </div>
+      </div>
+      <div class="col-lg-6">
+          <div class="fwd-form-group  margin-bottom-10">
+              <label>Producer Name 2</label>
+              <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+          </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="fwd-form-group  margin-bottom-10">
+            <label>Search Client Name</label>
+            <input class="form-control field-custom" type="text" placeholder="Search Client Name">
+            <span class="field-icon icon-login"><i class="fa fa-search" aria-hidden="true"></i></span>
+        </div>
+      </div>
+      <div class="col-lg-6">
+          <div ng-controller="businessCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch margin-bottom-10">
+              <label>Line of Business</label>
+              <md-select placeholder="Select Line of Business" ng-model="business" md-on-open="loadBusinesstype()">
+                <md-option ng-value="business" ng-repeat="business in businesstype">{{business.name}}</md-option>
+              </md-select>
+          </div>
+      </div>
+      <div class="col-lg-6">
+          <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+              <label>Target Commencement Date</label>
+              <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+          </div >
+      </div>
+      <div class="col-lg-6">
+          <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+              <label>Expected Expiry Date (Optional)</label>
+              <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+          </div >
+      </div>
+      <div class="col-lg-12">
+          <div class="float-right">
+            <button class="btn-outline-gray padding-lr-40">Cancel</button>
+            <button class="btn-orange margin-left-10 padding-lr-40">Submit</button>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+</section>

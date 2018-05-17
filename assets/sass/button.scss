@@ -1,0 +1,104 @@
+
+.btn-orange {
+  background:$orange;
+  color:#fff;
+  border-radius:0px !important;
+  padding:7px 20px!important;
+  font-family:'OpenSans-Regular',sans-serif;
+  font-size:16px !important;
+  height:40px !important;
+  border: none;
+}
+.btn-orange span.icon-search:before{
+  font-size: 22px;
+      position: relative;
+      left: -5px;
+      top: 0px;
+}
+.btn-gray {
+    background: #94a2a7;
+    color: #fff;
+    border-radius: 0px !important;
+    padding: 10px 20px !important;
+    font-family:'Foco',sans-serif;
+    font-weight: bold;
+    font-size: 18px !important;
+    height: 40px !important;
+    margin:auto 10px;;
+}
+.btn-gray span.icon-export:before {
+  font-size: 34px;
+      position: relative;
+      left: -5px;
+      top: -8px;
+      float:left;
+}
+.btn-blue {
+  background: #3b579d;
+  color: #fff;
+  border-radius: 0px !important;
+  padding: 10px 20px !important;
+  font-family:'Foco',sans-serif;
+  font-weight: bold;
+  font-size: 18px !important;
+  height: 40px !important;
+  margin:auto 10px;
+}
+
+
+.btn-outline-gray {
+  background: #fff;
+  color: #94a2a7;
+  border-radius: 0px !important;
+  font-family: 'OpenSans-Regular',sans-serif;
+  font-size: 15px !important;
+  height: 40px !important;
+  border: 2px solid #94a2a7 !important;
+  padding: 0px 20px;
+}
+
+.btn-icon-text-orange {
+  font-family: 'OpenSans-Regular',sans-serif;
+  background-color: transparent;
+  color: #ff8200;
+  font-size: 16px;
+  border: none;
+  position: relative;
+}
+
+.btn-icon-text-orange i {
+  font-size: 20px;
+  top: 2px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.btn-add-version {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  padding: 20px;
+  color: #222;
+  width: 100%;
+}
+
+.date-version {
+  color: #94a2a7;
+  padding-left: 15px;
+  line-height: 24px;
+}
+
+.btn-version {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+  padding: 15px 10px !important;
+  color: #222;
+  width: 100%;
+  text-align: left !important;
+  line-height: 20px !important;
+}

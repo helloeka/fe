@@ -1,0 +1,105 @@
+<section class="header-wrap-page">
+    <div class="bg-green-header-page"></div>
+    <div class="bg-header"></div>
+    <div class="container content-header-page">
+      <h1>Print Report</h1>
+      <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#/home">
+            Home
+          </a>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p class="active">
+            Print Report
+          <p>
+        </li>
+      </ul>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</section>
+<section class="bg-content bg-gray">
+  <div class="content-wrap">
+    <div class="container">
+      <div class="content-page">
+            <md-content>
+                <md-tabs class="col-2 tab-2-col" md-dynamic-height="" md-border-bottom="">
+                    <md-tab label="Print Report by Date">
+                    <md-content class="md-padding-tb-5 min-height-500">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+                                            <label>From Date</label>
+                                            <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+                                            <label>To Date</label>
+                                            <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div ng-controller="PrintReportPolicyCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                                        <label>Print Report by</label>
+                                        <md-select placeholder="Select Status" ng-model="criteria" md-on-open="loadCriterion()">
+                                            <md-option ng-value="criteria" ng-repeat="criteria in criterion">{{criteria.name}}</md-option>
+                                        </md-select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12">
+                                    <div class="float-right">
+                                        <button class="btn-outline-gray padding-lr-40">Cancel</button>
+                                        <button class="btn-orange margin-left-10 padding-lr-40">Submit</button>
+                                    </div>
+                                </div>
+                    </md-content>
+                    </md-tab>
+                    <md-tab label="Print Report by Policy No">
+                    <md-content class="md-padding-tb-5  min-height-500">
+                            <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+                                            <label>From Date</label>
+                                            <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div ng-controller="datepickerCtrl"  ng-cloak=""  class="margin-bottom-10">
+                                            <label>To Date</label>
+                                            <md-datepicker ng-model="ctrl.myDate" md-placeholder="Choose date"></md-datepicker>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div ng-controller="PrintReportPolicyCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                                        <label>Print Report by</label>
+                                        <md-select placeholder="Select Status" ng-model="criteria" md-on-open="loadCriterion()">
+                                            <md-option ng-value="criteria" ng-repeat="criteria in criterion">{{criteria.name}}</md-option>
+                                        </md-select>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12">
+                                    <div class="float-right">
+                                        <button class="btn-outline-gray padding-lr-40">Cancel</button>
+                                        <button class="btn-orange margin-left-10 padding-lr-40">Submit</button>
+                                    </div>
+                                </div>       
+                    </md-content>
+                    </md-tab>
+                </md-tabs>
+            </md-content>
+      </div>
+    </div>
+  </div>
+</section>

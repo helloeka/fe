@@ -1,0 +1,197 @@
+<section class="header-wrap-page">
+        <div class="bg-green-header-page"></div>
+        <div class="bg-header"></div>
+        <div class="container content-header-page">
+          <h1>Client Lists</h1>
+          <div class="breadcrumbs">
+          <ul>
+            <li>
+              <a href="#/home">
+                Home
+              </a>
+            </li>
+            <li><span class="icon-right"></span></li>
+            <li>
+                    <a href="#">
+                      Client
+                    </a>
+                  </li>
+                  <li><span class="icon-right"></span></li>
+            <li>
+              <p class="active">
+                     Client Lists
+              <p>
+            </li>
+          </ul>
+          </div>
+        </div>
+      <div class="clearfix"></div>
+    </section>
+    <section class="bg-content bg-gray">
+      <div class="content-wrap">
+        <div class="container">
+          <div class="content-page">
+                <div class="col-lg-5">
+                    <div class="fwd-form-group">
+                        <label>Search Adjustment Request</label>
+                        <input class="form-control field-custom padding-right" type="text" placeholder="Search Adjustment Request by Quotation No, Client Name, Sale Person ">
+                        <span class="field-icon icon-login"><i class="fa fa-search" aria-hidden="true"></i></span>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div ng-controller="statementCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                        <label>Business Type</label>
+                        <md-select placeholder="Assign to statement" ng-model="statement" md-on-open="loadStatements()">
+                            <md-option ng-value="statement" ng-repeat="statement in statements">{{statement.name}}</md-option>
+                        </md-select>
+                    </div>
+                </div>
+                <div class="col-lg-2 no-padding">
+                    <button class="btn-orange width-100 margin-top-30 width-100" tabindex="0"><span>Search</span></button>
+                </div>
+                
+                <div class="col-lg-12 no-padding">
+                    <div class="border-bottom"></div>
+                </div>
+                <div class="col-lg-6 no-padding">
+                    <div class="title-result">
+                        <h4>Total <span class="color-orange font-bold"> 25 </span>results for Client Lists </h4>
+                    </div>
+                    </div>
+                <div class="col-lg-6 no-padding">
+                    <div class="pagination-wrap float-right">
+                        <ul>
+                        <li>
+                            <a  href="javascript:void(0)"><span class="icon-left"></span></a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)" class="active-number">1</a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)">2</a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)">3</a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)">4</a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)">5</a>
+                        </li>
+                        <li>
+                            <a  href="javascript:void(0)" class="border-right-1px"><span class="icon-right"></span></a>
+                        </li>
+                        <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <section class="overflow-x">
+                        <table class="fwd-table table-striped">
+                                <thead>
+                                    <tr  class="table-head-gray1">
+                                        <th>Client Name</th>
+                                        <th>Address </th>
+                                        <th>Person in Charge</th>
+                                        <th>Telephone</th>
+                                        <th>Email  </th>
+                                        <th>View</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>PT Cahaya Sejahtera</td>
+                                        <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                        <td>Andreas Kuncoro</td>
+                                        <td >021 7839991</td>
+                                        <td>andreas@cahaya.co.id</td>
+                                        <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                    <tr>
+                                      <td>PT Cahaya Sejahtera</td>
+                                      <td>JL. Gatot Subroto Kav.15 No 12, Jaksel</td>
+                                      <td>Andreas Kuncoro</td>
+                                      <td >021 7839991</td>
+                                      <td>andreas@cahaya.co.id</td>
+                                      <td><a class="btn-icon-orange" [routerLink]="['#']"><i class="fas fa-file-alt"></i></a></td>
+                                    </tr>
+                                </tbody>
+                              </table>
+                      </section>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="title-result-bottom">
+                          <p>Page <span class="color-orange font-bold">1</span> of <span class="color-orange font-bold">3</span> in Client Lists</p>
+                          </div>
+                        </div>
+                      </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
