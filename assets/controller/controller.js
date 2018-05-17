@@ -42,6 +42,36 @@ app.controller('criteriaCtrl', function($timeout, $scope) {
   };
 })
 
+app.controller('employeetypeCtrl', function($timeout, $scope) {
+  $scope.criteria = null;
+  $scope.criterion = null;
+  $scope.loadCriterion = function() {
+    return $timeout(function() {
+      $scope.criterion =  $scope.criterion  || [
+        { id: 1, name: 'Manager' },
+        { id: 2, name: 'Supervisor' },
+        { id: 3, name: 'Director' },
+        { id: 4, name: 'Sales' }
+      ];
+    }, 650);
+  };
+})
+
+app.controller('relationCtrl', function($timeout, $scope) {
+  $scope.criteria = null;
+  $scope.criterion = null;
+  $scope.loadCriterion = function() {
+    return $timeout(function() {
+      $scope.criterion =  $scope.criterion  || [
+        { id: 1, name: 'Spouse' },
+        { id: 2, name: 'Child' },
+        { id: 3, name: 'Wife' },
+        { id: 4, name: 'Father' }
+      ];
+    }, 650);
+  };
+})
+
 
 app.controller('PrintReportPolicyCtrl', function($timeout, $scope) {
   $scope.criteria = null;

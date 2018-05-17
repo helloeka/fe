@@ -1,0 +1,396 @@
+<section class="header-wrap-page">
+    <div class="bg-green-header-page"></div>
+    <div class="bg-header"></div>
+    <div class="container content-header-page">
+      <h1>Quotation Version</h1>
+      <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#/home">
+            Home
+          </a>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p>
+            Quotation
+          <p>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p>
+            Quotation Version
+          <p>
+        </li>
+        <li><span class="icon-right"></span></li>
+        <li>
+          <p class="active">
+            Quotation Add Version 
+          <p>
+        </li>
+      </ul>
+      </div>
+    </div>
+  <div class="clearfix"></div>
+</section>
+<section class="bg-content bg-gray">
+  <div class="content-wrap">
+        <div class="container ">
+            <div class="content-page">
+                <div class="col-md-6">
+                    <div class="title-page">
+                        <h1>Census (and Subsidiary)</h1>
+                    </div>
+                    <div class="border-bottom"></div>
+                    <div class="col-md-4 no-padding">
+                      <div class="img-upload"></div>
+                    </div>
+                    <div class="col-md-8 no-padding">
+                      <div class="top-add-version">
+                          <center>
+                          <button class="btn-orange  ">Upload</button>
+                          <button class="btn-outline-orange margin-left-10 ">Download</button>
+                          </center>
+                      </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="title-page">
+                        <h1>Benefit Schedule</h1>
+                    </div>
+                    <div class="border-bottom"></div>
+                    <div class="col-md-12">
+                    <div class="top-add-version">
+                      <center><button class="btn-outline-gray padding-lr-40">Download</button></center>
+                    </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                
+               
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="content-page-2nd">
+                              <div class="col-lg-3 no-padding side-wrap">
+                                <button class="btn-add-version" ui-sref="quotation-add-version"><span class="float-left ">Employee Type</span><i class="fas fa-plus-circle"></i></button>
+                                
+                                <div class="sidebar overflow-y">
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span >Manager with Maternity (26) </span><br><span class="sub-version-title">Spouse, Child </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Supervisor without Dependent</span><br><span class="sub-version-title"> Spouse </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Director (12,250) </span><br><span class="sub-version-title"> Child </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Sales (25,687) </span><br><span class="sub-version-title"> Child </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Manager without Maternity (356) </span><br><span class="sub-version-title"> Spouse</span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Supervisor with Dependent (56)</span><br><span class="sub-version-title"> Spouse </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Sales with Dependent (526) </span><br><span class="sub-version-title"> Child </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Supervisor with Dependent (56) </span><br><span class="sub-version-title"> Spouse </span></button>
+                                  <button class="btn-version"[routerLink]="['#']" mat-button><span class="float-left">Supervisor with Dependent (56) </span><br><span class="sub-version-title"> Spouse </span></button>
+                                  
+                                </div>
+                              </div>
+                              <div class="col-lg-9 no-padding  right-content border-left min-height-500">
+                                <div class=" padding-20 ">
+                                  <div class="col-lg-12">
+                                      <div class="title-page">
+                                          <h1>Type Details</h1>
+                                      </div>
+                                  </div>
+                                  <div class="clearfix"></div>
+                                  <div class="border-bottom"></div>
+                                  <div class="type-detail-row1">
+                                    <div class="col-lg-4 no-padding-left">
+                                      <div class="fwd-form-group">
+                                          <label>Plan Code</label>
+                                          <input class="form-control field-custom" type="text" placeholder="e.g. 100000002">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4 no-padding">
+                                        <div ng-controller="employeetypeCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                                            <label>Employee Type</label>
+                                            <md-select placeholder="Select Position" ng-model="criteria" md-on-open="loadCriterion()">
+                                              <md-option ng-value="criteria" ng-repeat="criteria in criterion">{{criteria.name}}</md-option>
+                                            </md-select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 no-padding-right">
+                                        <div ng-controller="relationCtrl"  ng-cloak="" class="selectdemoOptionsWithAsyncSearch">
+                                            <label>Apply To</label>
+                                            <md-select placeholder="Select Apply to" ng-model="criteria" md-on-open="loadCriterion()">
+                                              <md-option ng-value="criteria" ng-repeat="criteria in criterion">{{criteria.name}}</md-option>
+                                            </md-select>
+                                        </div>
+                                      </div>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                  <div class="type-detail-row1">
+                                      <section ng-controller="achievementCtrl">
+                                          <section class="overflow-x">
+                                              <table class="fwd-table table-type-detail">
+                                                     <thead>
+                                                         <tr  class="table-head-gray1">
+                                                             <th>Benefit</th>
+                                                             <th>Accelerated </th>
+                                                             <th>Additional</th>
+                                                             <th>Multiplier of Monthly Salary</th>
+                                                             <th>Fixed Sum Assurd</th>
+                                                             <th>Census Data </th>
+                                                         </tr>
+                                                     </thead>
+                                                     <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Term Life
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number" placeholder="e.g. 9,000,000,000,000"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                              <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                              </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Total and Permanent Disability
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number" ></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                              <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                              </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Critical IIlness
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                              <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                              </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Terminal IIlness
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                                <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Accidental Death Benefit
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                                <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-gray-sub-1">
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Accidental Permanent Disability
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                                <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bg-gray-sub-2">
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Accidental Medical Expense Reimbursment
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                                <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                              </center>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary"></md-checkbox>
+                                                                Second Medical Opinion
+                                                            </td>
+                                                            <td>
+                                                              <center>
+                                                                <md-radio-group>
+                                                                  <md-radio-button  class="md-primary"></md-radio-button>
+                                                                </md-radio-group>
+                                                              </center>
+                                                            </td>
+                                                            <td>
+                                                                <center>
+                                                                    <md-radio-group>
+                                                                      <md-radio-button class="md-primary"></md-radio-button>
+                                                                    </md-radio-group>
+                                                                </center>
+                                                            </td>
+                                                            <td><input class="form-control field-custom" type="number"></td>
+                                                            <td ><input class="form-control field-custom" type="number" ></td>
+                                                            <td>
+                                                                <center>
+                                                                <md-checkbox md-no-ink aria-label="Checkbox No Ink" class="md-primary">
+                                                                  
+                                                                </md-checkbox>
+                                                              </center>
+                                                            </td>
+                                                        </tr>
+                                                     </tbody>
+                                              </table>
+                                                  
+                                          </section>
+                                      </section>
+                                      <div class="float-right">
+                                          <button class="btn-outline-gray ">Cancel</button>
+                                          <button class="btn-orange margin-left-10 ">Submit</button>
+                                      </div>
+                                      <div class="clearfix"></div>
+                                  </div>
+                                  
+                                    
+                                </div>
+                               
+                              </div>
+                              <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+</section>

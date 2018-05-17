@@ -40,6 +40,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
             }
         })
 
+        .state('quotation-add-version', {
+            url: '/quotation-add-version',
+             views: {
+                'main': { templateUrl: 'view/quotation-add-version.html'},
+                'nav': { templateUrl: 'view/nav.html'},
+                'footer': { templateUrl: 'view/footer.html'}
+            }
+        })
+
        
         .state('print-report', {
             url: '/print-report',
@@ -93,6 +102,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/create-new-sme',
              views: {
                 'main': { templateUrl: 'view/create-new-sme.html'},
+                'nav': { templateUrl: 'view/nav.html'},
+                'footer': { templateUrl: 'view/footer.html'}
+            }
+        })
+
+        .state('profile-detail', {
+            url: '/profile-detail',
+             views: {
+                'main': { templateUrl: 'view/profile-detail.html'},
                 'nav': { templateUrl: 'view/nav.html'},
                 'footer': { templateUrl: 'view/footer.html'}
             }

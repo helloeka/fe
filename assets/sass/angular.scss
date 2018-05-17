@@ -135,3 +135,14 @@ md-input-container.md-input-focused label {
   font-size: 18px !important;
   transform:none !important;
 }
+
+md-radio-group:not([disabled]) .md-primary .md-on {
+  background-color:$orange !important;
+}
+
+md-radio-button:not([disabled]).md-primary.md-checked .md-off {
+  border-color:$orange !important;
+}
+md-radio-button, md-checkbox, md-checkbox .md-container {
+  display: inline !important;
+}
