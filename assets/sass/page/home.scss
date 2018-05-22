@@ -51,7 +51,7 @@
   opacity:0.5;
 }
 .fwd-top-menu>li>a:focus, .fwd-top-menu>li>a:hover  {
-  color:$orange;
+  color:$blue;
   background-color:transparent !important;
 }
 
@@ -95,13 +95,13 @@
 }
 .fwd-main-menu>li>a:focus, .fwd-main-menu>li>a:hover {
   background-color:transparent !important;
-  color:$orange;
+  color:$blue;
 }
 .fwd-dropdown {
       width: 210px !important;
       max-width:210px !important;
       left:-42px!important;
-      background-color:rgba(255,130,0,0.9) !important;
+      background-color:rgba(0, 130, 190,0.9) !important;
       border-radius: 0px !important;
       border:none !important;
 }
@@ -129,14 +129,14 @@
 }
 .title-first h5 {
   font-family:'Foco',sans-serif;
-  color:$orange;
+  color:$blue;
   font-size:40px;
   font-weight:bold;
 }
 
 .title-second {
     padding:0px 18px;
-    background:$orange;
+    background:$blue;
     display: inline-table;
     left: 210px;
     right: 0;
@@ -186,7 +186,7 @@
   width:100px;
 }
 .item-news h5 {
-  color:$orange;
+  color:$blue;
   font-family:'Foco-Light',sans-serif;
   font-size:18px
 }
@@ -199,7 +199,7 @@ float:left;
 margin:0px 5px;
 }
 .owl-dot.active {
-  background:$orange;
+  background:$blue;
 }
 .bg-gray {
   background:#efefef;
@@ -424,7 +424,7 @@ margin:0px 5px;
 .fwd-dropdown>li>a:focus, .fwd-dropdown>li>a:hover {
     color:#fff !important;
     text-decoration: none;
-    background-color:rgba(171, 89, 4, 0.9) !important;
+    background-color:rgba(0, 130, 190,0.2) !important;
 }
 .form-control {
   height:42px !important;
@@ -475,7 +475,7 @@ margin:0px 5px;
 
 .btn-add-version i {
   float:right;
-  color:$orange;
+  color:$blue;
   font-size:20px;
 }
 
@@ -487,6 +487,9 @@ margin:0px 5px;
   width:100%;
   height:100px;
   overflow: hidden;
+  position: absolute;
+    top: 0;
+    z-index: 0;
 }
 .top-add-version {
   margin:25px auto;
@@ -556,4 +559,82 @@ margin:0px 5px;
   font-size:16px;
   margin:5px auto;
   color:green;
+}
+
+.img-upload-wrap {
+  width: 170px;
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+ 
+}
+.img-upload-wrap img {
+  width:100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.js .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.box {
+  float:left;
+}
+.inputfile + label {
+  max-width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  padding:10px;
+}
+
+.no-js .inputfile + label {
+  display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+  /* pointer-events: none; */
+  /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  fill: currentColor;
+  margin-top: -0.25em;
+  /* 4px */
+  margin-right: 0.25em;
+  /* 4px */
+}
+
+
+.inputfile-1 + label {
+  color: #FFF;
+  background-color: $blue;
+  margin-left: 20px;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+  background-color: $blue;
+}
+.box input[type=file] {
+  display:none !important
 }

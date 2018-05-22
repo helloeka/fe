@@ -83,7 +83,7 @@ label {
 .sub-title-page h1 {
   font-family: 'Foco',sans-serif;
   font-size: 20px;
-  color: #ff8200;
+  color: $blue;
   padding-top: 4px;
   margin: auto;
 }
@@ -99,12 +99,12 @@ label {
   width:100% !important;
 }
 .fwd-table table tr td a {
-  color:$orange;
+  color:$blue;
   cursor: pointer;
 }
 .btn-icon-orange i {
   font-size: 20px;
-  color:$orange;
+  color:$blue;
   cursor: pointer;
 }
 

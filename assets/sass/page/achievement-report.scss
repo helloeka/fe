@@ -57,7 +57,7 @@
   top: 3px;
 }
 .breadcrumbs ul li p.active {
-  color:$orange;
+  color:#6fd2ff;
 }
 .breadcrumbs ul li {
   float:left;
@@ -93,6 +93,9 @@
 }
 .color-orange {
   color:$orange
+}
+.color-orange {
+  color:$blue
 }
 .table-head-gray1 {
   background:#222;
@@ -165,7 +168,7 @@ padding: 10px 15px;
   border-right: 1px solid #eee !important;
 }
 .pagination-wrap ul li a.active-number {
-  background:$orange;
+  background:$blue;
   padding: 10px 15px;
   color:#FFF;
   font-family:'Foco',sans-serif;
